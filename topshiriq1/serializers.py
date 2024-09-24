@@ -61,4 +61,4 @@ class LoginSerializer(serializers.Serializer):
 class VacancySerializer(ModelSerializer):
     class Meta:
         model = Vacancy
-        fields = ("name","salary")
+        fields = ("name", "salary")

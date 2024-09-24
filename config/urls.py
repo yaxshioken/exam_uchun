@@ -25,7 +25,7 @@ from config.swagger import swagger_urlpatterns
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/v1/", include("topshiriq1.urls.v1"), name="api-v1"),
-    path("api/v1/",include("topshiriq5.urls.v1"), name="api-v2"),
+    path("api/v1/", include("topshiriq5.urls.v1"), name="api-v2"),
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]
